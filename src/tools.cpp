@@ -31,7 +31,7 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
     rmse += d;
   }
   // mean
-  rmse = rmse / rmse.size();
+  rmse = rmse / estimations.size();
   // root
   rmse = rmse.array().sqrt();
   return rmse;
